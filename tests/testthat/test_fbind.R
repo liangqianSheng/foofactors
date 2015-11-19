@@ -6,6 +6,8 @@ test_that("fbind binds factor (or character)", {
   y <- c('c', 'd')
   z <- factor(c('a', 'b', 'c', 'd'))
 
+
   expect_identical(fbind(x, y), z)
   expect_identical(fbind(x_fact, y), z)
+  expect_error(fbind(x,y,z))
 })
