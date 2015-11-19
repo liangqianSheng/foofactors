@@ -1,12 +1,8 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-This is a practice package for [STAT 545](http://stat545-ubc.github.io).
-
-This is just the demo Jenny is posting for students to consult / start with for their homework.
-
-Here's how to use the `foofactors` package.
+I add a new function and three tests for the function(two success and one failure)
 
 ``` r
-#install_github("STAT545/foofactors")
+#install_github("LiangqianSheng/foofactors")
 library(foofactors)
 fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
 #> [1] setosa     versicolor virginica  ctrl       trt1       trt2      
@@ -19,4 +15,8 @@ freq_out(iris$Species)
 #> 1     setosa    50
 #> 2 versicolor    50
 #> 3  virginica    50
+cuttable(iris$Sepal.Width,3)
+#> distribution_tbl
+#>   (2,2.8] (2.8,3.6] (3.6,4.4] 
+#>        47        88        15
 ```
