@@ -14,7 +14,19 @@ knitr::opts_chunk$set(
 )
 ```
 
-I add a new function and three tests for the function(two success and one failure)
+I added two new functions and three tests for each function in the package.
+
+
+You can use the fbind() function to bind two factors together.
+
+
+You can use the freq_out() funtion to create a data frame consisting of the levels of the factor and their frequency.
+
+
+You can use the cuttable(x,a) function to cut a numeric factor "x" into "a" intervals and make a distribution table for the factor.
+
+
+You can use the addPercent() function to add "%" to the factor.
 
 
 ```{r}
@@ -23,5 +35,8 @@ library(foofactors)
 fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
 freq_out(iris$Species)
 cuttable(iris$Sepal.Width,3)
+addPercent(iris$Sepal.Length)
 ```
+
+
 
