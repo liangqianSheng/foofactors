@@ -1,10 +1,6 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 I added two new functions and three tests for each function in the package.
 
-You can install the package by
-
-'install\_github("liangqianSheng/foofactors") library(foofactors)'
-
 You can use the fbind() function to bind two factors together.
 
 You can use the freq\_out() funtion to create a data frame consisting of the levels of the factor and their frequency.
