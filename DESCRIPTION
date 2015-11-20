@@ -18,6 +18,6 @@ Suggests:
     rmarkdown
 Imports:
     dplyr
-URL: https://github.com/STAT545-UBC/foofactors
-BugReports: https://github.com/STAT545-UBC/foofactors/issues
+URL: https://github.com/liangqianSheng/foofactors
+BugReports: https://github.com/liangqianSheng/foofactors/issues
 VignetteBuilder: knitr

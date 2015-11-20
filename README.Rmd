@@ -17,6 +17,12 @@ knitr::opts_chunk$set(
 I added two new functions and three tests for each function in the package.
 
 
+You can install the package by 
+
+'install_github("liangqianSheng/foofactors")
+library(foofactors)'
+
+
 You can use the fbind() function to bind two factors together.
 
 
@@ -30,7 +36,7 @@ You can use the addPercent() function to add "%" to the factor.
 
 
 ```{r}
-#install_github("LiangqianSheng/foofactors")
+#install_github("liangqianSheng/foofactors")
 library(foofactors)
 fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
 freq_out(iris$Species)

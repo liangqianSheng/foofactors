@@ -1,6 +1,10 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 I added two new functions and three tests for each function in the package.
 
+You can install the package by
+
+'install\_github("liangqianSheng/foofactors") library(foofactors)'
+
 You can use the fbind() function to bind two factors together.
 
 You can use the freq\_out() funtion to create a data frame consisting of the levels of the factor and their frequency.
@@ -10,7 +14,7 @@ You can use the cuttable(x,a) function to cut a numeric factor "x" into "a" inte
 You can use the addPercent() function to add "%" to the factor.
 
 ``` r
-#install_github("LiangqianSheng/foofactors")
+#install_github("liangqianSheng/foofactors")
 library(foofactors)
 fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
 #> [1] setosa     versicolor virginica  ctrl       trt1       trt2      
